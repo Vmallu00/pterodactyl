@@ -66,11 +66,13 @@ banner
 
 done=false
 while [ "$done" == false ]; do
-  options=(
-    "Install the panel"
-    "Install Wings"
-    "Install both [0] and [1] on the same machine (wings script runs after panel)"
-    # "Uninstall panel or wings\n"
+  banner
+
+echo -e "${PURPLE}========================================${RESET}"
+echo -e "${PURPLE}               MAIN MENU                ${RESET}"
+echo -e "${PURPLE}========================================${RESET}"
+
+done=false
 
     "Install panel with canary version of the script (the versions that lives in master, may be broken!)"
     "Install Wings with canary version of the script (the versions that lives in master, may be broken!)"
