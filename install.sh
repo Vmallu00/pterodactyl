@@ -59,11 +59,10 @@ execute() {
   fi
 }
 
-banner
-
 done=false
 while [ "$done" == false ]; do
-
+  banner
+  
   options=(    
     "Install the panel"
     "Install Wings"
