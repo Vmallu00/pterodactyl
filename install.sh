@@ -63,15 +63,9 @@ banner
 
 done=false
 while [ "$done" == false ]; do
-  banner
 
-  echo -e "${PURPLE}========================================${RESET}"
-  echo -e "${PURPLE}        PTERODACTYL INSTALLER${RESET}"
-  echo -e "${PURPLE}                𓆰𓆪${RESET}"
-  echo -e "${PURPLE}========================================${RESET}"
-  echo
-
-  options=(    "Install the panel"
+  options=(    
+    "Install the panel"
     "Install Wings"
     "Install both [0] and [1] on the same machine (wings script runs after panel)"
     # "Uninstall panel or wings\n"
