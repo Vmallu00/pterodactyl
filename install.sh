@@ -62,7 +62,7 @@ execute() {
   fi
 }
 
-welcome ""
+banner
 
 done=false
 while [ "$done" == false ]; do
