@@ -4,6 +4,7 @@ set -e
 
 PURPLE="\e[38;5;129m"
 WHITE="\e[97m"
+CYAN="\e[96m"
 RESET="\e[0m"
 
 banner() {
