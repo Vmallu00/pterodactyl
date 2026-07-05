@@ -7,6 +7,17 @@ WHITE="\e[97m"
 CYAN="\e[96m"
 RESET="\e[0m"
 
+rainbow_symbol() {
+    local colors=(196 202 226 46 51 21 93 201)
+
+    for color in "${colors[@]}"; do
+        printf "\e[38;5;%sm𓆰𓆪\e[0m\r" "$color"
+        sleep 0.08
+    done
+
+    echo
+}
+
 banner() {
     clear
     echo -e "${PURPLE}"
@@ -17,7 +28,8 @@ banner() {
     echo "██║        ██║   ███████╗██║  ██║╚██████╔╝"
     echo "╚═╝        ╚═╝   ╚══════╝╚═╝  ╚═╝ ╚═════╝"
     echo
-    echo "                𓆰𓆪"
+    printf "                "
+    rainbow_symbol
     echo
     echo -e "${WHITE}Custom Pterodactyl Installer${RESET}"
     echo
