@@ -87,12 +87,15 @@ while [ "$done" == false ]; do
     "uninstall_canary"
   )
 
-  output "What would you like to do?"
+  echo -e "${PURPLE}╔════════════════════════════════════════════════════╗${RESET}"
+echo -e "${PURPLE}║                    MAIN MENU                      ║${RESET}"
+echo -e "${PURPLE}╠════════════════════════════════════════════════════╣${RESET}"
 
-  for i in "${!options[@]}"; do
-    output "[$i] ${options[$i]}"
-  done
+for i in "${!options[@]}"; do
+    echo -e "${PURPLE}║${RESET} ${CYAN}[$i]${RESET} ${WHITE}${options[$i]}${RESET}"
+done
 
+echo -e "${PURPLE}╚════════════════════════════════════════════════════╝${RESET}"
   echo -n "* Input 0-$((${#actions[@]} - 1)): "
   read -r action
 
